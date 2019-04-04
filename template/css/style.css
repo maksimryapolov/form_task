@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover {
+    text-decoration: none;
+    color: rgb(204, 184, 162);
+}
+
+.nav,
+.footer {
+    padding: 35px;
+    background-color: #2e3140;
+    font-size: 1.28em;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.nav_block {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    height: 100%;
+    width: 70%;
+    margin: auto;
+}
+
+.nav_block-item {
+    margin-left: 20px;
+}
+
+.form_block-title {
+    margin-bottom: 3em;
+}
+
+.content_decoration {
+    background-image: url("../img/ozero-gory-tuman-4.jpg");
+    background-color: #8dc4d091;
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 700px;
+    width: 500px;
+    background-blend-mode: darken;
+    margin: 35px 0;
+}
+
+.content {
+    flex: 1 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2px;
+    background-color: #31364e;
+    color: #c8e9e9;
+  }
+
+label {
+    display: inline-block;
+    margin-bottom: .5em;
+}
+
+.form-block {
+    font-size: 1.6em;
+    display: flex;
+    align-items: center;
+    max-width: 13em;
+    margin-left: 81px;
+}
+
+.texttype {
+    height: 3em;
+    font-size: .5em;
+    box-sizing: border-box;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: .35em;
+    padding: .375rem .75rem;
+    width: 100%;
+}
+
+.from-group {
+    margin-bottom: .7em;
+}
+
+.attr {
+    vertical-align: sub;
+}
+
+.errorsLogin {
+    width: 30%;
+    border: 1px solid rgb(68, 151, 177);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    position: absolute;
+    padding: 10px 0 10px 10px;
+    font-size: 1.2em;
+    line-height: 30px;
+    transform: translate3d(-295px, 33px, 0);
+    background: white;
+    color: #3e7a93;
+    text-transform: uppercase;
+}
+
+.form-explanation {
+    font-size: .56em;
+    color: #ccc;
+}
+
+.error {
+    color: red;
+}
+
+.result,
+.profile_block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.popover_login,
+.popover_email,
+.popover_password {
+    width: 175px;
+    padding: 5px 20px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background: #fff;
+    margin-right: .5em;
+    position: absolute;
+    will-change: transform;
+    top: 0px;
+    left: 0px;
+    transform: translate3d(27px, 407px, 0px);
+}
+
+.popover_email {
+    transform: translate3d(27px, 500px, 0px);
+}
+
+.popover_password {
+    transform: translate3d(27px, 606px, 0px);
+}
+
+.arrow_login,
+.arrow_email,
+.arrow_password {
+    position: absolute;
+    width: .5rem;
+    height: 1rem;
+    right: calc((.4rem + 1px) * -1);
+    top: 29px;
+}
+
+.arrow_email {
+    top: 36px;
+}
+
+div.arrow_login::after,
+div.arrow_email::after,
+div.arrow_password::after {
+    left: 0;
+    border-left-color: #fff;
+    border-width: .5rem 0 .5rem .5rem;
+
+    position: absolute;
+    display: block;
+    content: "";
+    border-color: transparent;
+    border-style: solid;
+}
+
+div.arrow_login::after,
+div.arrow_email::after,
+div.arrow_password::after {
+    border-width: .5rem 0 .5rem .5rem;
+    position: absolute;
+    display: block;
+    content: "";
+    border-color: transparent;
+    border-style: solid;
+    left: 1px;
+    border-left-color: #fff;
+}
+
+.about_error {
+    color: #747272;
+    font-size: 0.87rem;
+    letter-spacing: 1px;
+    line-height: 17px;
+}
+
+.btn {
+    color: #839ebc;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-color: #839ebc;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+table {
+    font-size: 1.5em;
+    border-spacing: 12px;
+}
+
+td  {
+    border-bottom: 1px solid #839ebc;
+    padding-bottom: 5px;
+    text-align: center;
+}
+th {
+    text-align: left;
+    padding-right: 10px;
+}
+
+caption {
+    text-align: center;
+    margin: 1em 0 2.5em 0;
+    font-size: 1.5em;
+}
+
+.btn:hover {
+    cursor: pointer;
+    color: #31364e;
+    background-color: #839ebc;
+    border-color: #839ebc;
+}
+
+.footer {
+    flex: 0 0 auto;
+    text-align: center;
+    margin-top: 2px;
+}
+
+
